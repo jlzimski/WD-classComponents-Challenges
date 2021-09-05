@@ -6,7 +6,6 @@ var list = document.querySelector("#container");
 class ToDoList extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             items: []
         };

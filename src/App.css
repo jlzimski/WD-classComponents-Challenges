@@ -72,3 +72,20 @@
 ul.theList {
   padding: 0;
 }
+
+.searchAppForm input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 275px;
+}
+
+.searchAppForm button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: rgb(2, 112, 112);
+  color: #FFF;
+  border: 2px solid ;
+}

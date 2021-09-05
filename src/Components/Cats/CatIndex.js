@@ -12,7 +12,7 @@ export default class ClassComponentProps extends Component {
   render() {
     return (
       <div>
-        <CatList cats={this.state.breeds} />
+        <CatList Cats={this.state.breeds} />
       </div >
     );
   }
