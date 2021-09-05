@@ -1,16 +1,9 @@
 .App {
   text-align: center;
-}
+  background-color: lawngreen;
+  padding: 50px;
+  color: rgb(2, 112, 112);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,11 +21,54 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.todoListMain {
+  color: cyan;
+
+}
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 275px;
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: rgb(2, 112, 112);
+  color: #FFF;
+  border: 2px solid ;
+}
+
+.todoListMain .header button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: 400px;
+} 
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgb(2, 112, 112);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.theList {
+  padding: 0;
 }
