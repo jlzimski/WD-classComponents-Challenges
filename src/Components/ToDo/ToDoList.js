@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import TodoItems from './ToDoItems';
 
-var list = document.querySelector("#container");
-
 class ToDoList extends Component {
     constructor(props) {
         super(props);
