@@ -7,12 +7,13 @@ class SearchIndex extends Component {
     this.state = {
       filter: "",
       things: ['pen', 'marker', 'eraser', 'notebook', 'pencil', 'scissors', 'highlighter', 'stapler', 'paper clip', 'binder', 'hole punch', 'laminator', 'laminating sheets', 'protective sheets', 'index cards']
-    }
+    };
   }
 
   searchText(e) {
     this.setState({ filter: e.target.value });
   };
+
 
   render() {
     let { filter, things } = this.state;
@@ -25,20 +26,42 @@ class SearchIndex extends Component {
     return(
     <div className="searchAppMain">
       <div className="searchAppForm">
-        <form onSubmit={this.searchText.bind(this)}>
-          <input type="text" value={filter} placeholder='Search Here' />
+        <form onSubmit={this.searchText}>
+          <input ref={(a) => this._inputElement = a} placeholder='Search Here' />
           <button type="submit">Search</button>
         </form>
       </div>
       <hr/>
       <h3>Results:</h3>
-      <ul>
-        {/* <li>{DataSearch.map(item => {item.things})} </li> */}
-        {/* {{ this.state.things.map(item => 
-          <li>{item.things}</li>
-          )}}  */}
-        <li>{ this.state.things }</li>
-      </ul>
+      <p>{ this.state.things }</p>
+      <section className="section">
+            <ul>
+              {this.state.things.map(item => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+      {/* <this.displayList /> */}
+      <table>
+        <tr>
+          <th>matching items</th>
+        </tr>
+        {
+          (DataSearch.map(item =>
+            <tr>
+              <td>
+                {item.things}
+              </td>
+            </tr>
+            ))
+        }
+      </table>
+      {/* <ul>
+        <li>{DataSearch.map(item => {item.things})} </li>
+        <li>{{ this.state.things.map((item) => 
+          {item.things}
+          )}} </li>
+      </ul> */}
     </div>
     )
   }
