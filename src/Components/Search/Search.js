@@ -5,7 +5,7 @@ import { Container } from 'reactstrap';
 const Search = () => {
   return (
     <Container className="App">
-      <h1>Search Array</h1>
+      <h1>Searching for Things?</h1>
       <br />
       {/* <h1 className="App-intro">
         In this challenge your goal is to use the existing code to create the following:
