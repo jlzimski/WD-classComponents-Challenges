@@ -11,7 +11,10 @@ class SearchIndex extends Component {
   }
 
   searchText(e) {
-    this.setState({ filter: e.target.value });
+    // this.setState({ filter: e.target.value });
+    let things = this.state.things;
+    const searchCart = document.getElementById("searchShoppingCart");
+    const form = document.getElementById("shoppingCart");
   };
 
 
@@ -26,10 +29,15 @@ class SearchIndex extends Component {
     return(
     <div className="searchAppMain">
       <div className="searchAppForm">
-        <form onSubmit={this.searchText}>
-          <input ref={(a) => this._inputElement = a} placeholder='Search Here' />
-          <button type="submit">Search</button>
-        </form>
+        <section>
+          <form className="form" id="shoppingCart">
+          {/* <form onSubmit={this.searchText}> */}
+            <input type="text" className="staplesOrder" id="searchShoppingCart" placeholder="Search Shopping Cart" />
+            {/* <input ref={(a) => this._inputElement = a} placeholder='Search Here' /> */}
+            {/* <button type="submit">Search</button> */}
+          </form>
+        </section>
+
       </div>
       <hr/>
       <h3>Results:</h3>

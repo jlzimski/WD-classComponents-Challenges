@@ -3,6 +3,9 @@
   background-color: lawngreen;
   padding: 30px;
   color: rgb(2, 112, 112);
+  /* font-family: Smilen;
+  font-size: 48pt; */
+
 }
 
 .App-header {
@@ -25,9 +28,13 @@
   justify-content: center;
 }
 
+.felineFormattingMain {
+  font-family: BlackberryJam;
+}
+
 .todoListMain {
   color: cyan;
-
+  font-family: Snowychristmas;
 }
 
 .todoListMain .header input {
@@ -72,6 +79,10 @@ ul.theList {
   padding: 0;
 }
 
+.searchAppMain {
+  font-family: Saltedcaramel;
+}
+
 .searchAppForm input {
   padding: 10px;
   font-size: 16px;
@@ -94,6 +105,7 @@ ul.theList {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  font-family: Smilen;
 }
 
 .shotsOfSpot {
@@ -101,4 +113,24 @@ ul.theList {
   height: 400px;
   border: 3px solid whitesmoke;
   border-radius: 8px;
+}
+
+@font-face {
+  font-family: BlackberryJam;
+  src: url('./Assets/BlackberryJamPersonalUse-rXOB.ttf');
+}
+
+@font-face {
+  font-family: Saltedcaramel;;
+  src: url('./Assets/Saltedcaramel-9YoAL.ttf');
+}
+
+@font-face {
+  font-family: Smilen;
+  src: url('./Assets/Smilen-gKW6.otf');
+}
+
+@font-face {
+  font-family: Snowychristmas;
+  src: url('./Assets/Snowychristmas-L3ZzZ.otf');
 }

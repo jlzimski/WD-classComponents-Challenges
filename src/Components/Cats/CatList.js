@@ -29,15 +29,18 @@ class CatList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      breeds: this.props.cat.breeds
+      breeds: this.props.catlist.breeds,
+      key: Date.now()
     }
   }
   render() {
     return (
       <div>
-        {this.props.breeds.map(cat => <li>cat</li>)}
+        <ul>
+        {this.state.breeds.map((felines) => <li key={ felines }>{ felines }</li>)}
+        </ul>
       </div>
     )
-  }
-}
+  };
+};
 export default CatList;

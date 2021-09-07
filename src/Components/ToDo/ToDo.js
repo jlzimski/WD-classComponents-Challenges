@@ -5,7 +5,6 @@ import ToDoList from './ToDoList';
 const ToDo = () => {
     return (
         <Container className="App">
-            <h1>To-Do List</h1>
             <br />
             {/* <h1 className="App-intro">
                 In this challenge your goal is to create a to do list:

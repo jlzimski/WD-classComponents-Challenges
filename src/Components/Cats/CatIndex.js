@@ -30,8 +30,8 @@ class CatIndex extends Component {
   }
   render() {
     return (
-      <div>
-        <CatList cats={this.state.breeds} />
+      <div className="felineFormatingMain">
+        <CatList felines={this.state.breeds} />
       </div>
     );
   }
