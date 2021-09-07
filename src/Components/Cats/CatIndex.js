@@ -31,7 +31,14 @@ class CatIndex extends Component {
   render() {
     return (
       <div className="felineFormatingMain">
-        <CatList felines={this.state.breeds} />
+              <section className="section">
+            <ul>
+              {this.state.breeds.map(item => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        {/* <CatList felines={this.state.breeds} /> */}
       </div>
     );
   }

@@ -33,7 +33,7 @@ class DogIndex extends Component {
     render() {
         return (
             <div className="dogIndexMain">
-                <button className="fetchFido" onClick={ () => this.fetchFido()} >Fetch Fido!</button>
+                <button className="fetchFido" onClick={this.fetchFido} >Let's Play Fetch!</button>
                 <hr/>
                 <div className="shotsOfSpot">
                     <img className="shotsOfSpot" src={this.state.image} alt="doggo" />

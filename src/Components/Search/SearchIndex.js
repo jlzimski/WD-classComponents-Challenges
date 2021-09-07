@@ -10,11 +10,18 @@ class SearchIndex extends Component {
     };
   }
 
-  searchText(e) {
+  searchCart(item) {
     // this.setState({ filter: e.target.value });
-    let things = this.state.things;
+    const things = this.state.things.slice();
     const searchCart = document.getElementById("searchShoppingCart");
     const form = document.getElementById("shoppingCart");
+    let newCart = [];
+
+    things.some((el, i) => {
+      if (el === item) {
+        things.splice(i, 1);
+      }
+    })
   };
 
 
