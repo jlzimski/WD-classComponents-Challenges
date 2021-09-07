@@ -1,14 +1,13 @@
 .App {
   text-align: center;
   background-color: lawngreen;
-  padding: 50px;
+  padding: 30px;
   color: rgb(2, 112, 112);
-
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,4 +87,18 @@ ul.theList {
   background-color: rgb(2, 112, 112);
   color: #FFF;
   border: 2px solid ;
+}
+
+.dogIndexMain {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.shotsOfSpot {
+  width: 500px;
+  height: 400px;
+  border: 3px solid whitesmoke;
+  border-radius: 8px;
 }
